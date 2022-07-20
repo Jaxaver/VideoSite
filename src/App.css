@@ -7,12 +7,6 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -28,11 +22,31 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.player-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+    /* Player ratio: 100 / (1280 / 720) */
+  display: flex;
+  justify-content: center;
+
 }
+
+.react-player {
+
+  position:absolute;
+  max-height: 540px;
+  max-width: 960px;
+}
+
+
+.video-card:hover {
+  background-color: red;
+}
+
+
+.responsive-text:hover {
+  -webkit-transform: scale(1.2); 
+}
+
+
+
